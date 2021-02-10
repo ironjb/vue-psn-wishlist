@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "itemId": "UP1003-CUSA08793_00-ARKANEBUNDLE20YR",
+      "addTime": "2021-02-10T00:15:00Z",
+      "name": "Dishonored & Prey: The Arkane Collection",
+      "additionalInfo": "Also see bundle: Dishonored The Complete Collection",
+      "lowestPrice": 29.99
+    },
+    {
       "itemId": "UP4040-CUSA11461_00-CONTROLDELUXEPO1",
       "addTime": "2020-07-23T19:47:17Z"
     },
@@ -262,7 +269,10 @@
     },
     {
       "itemId": "UP1003-CUSA08793_00-DOTOCOMPLETEBUND",
-      "addTime": "2018-07-04T04:06:58Z"
+      "addTime": "2018-07-04T04:06:58Z",
+      "name": "Dishonored The Complete Collection",
+      "additionalInfo": "Also available in bundle: Dishonored & Prey: The Arkane Collection",
+      "lowestPrice": 17.99
     },
     {
       "itemId": "UP1003-CUSA00203_00-THEEVILWITHINENG",
