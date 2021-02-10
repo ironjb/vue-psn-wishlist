@@ -10,6 +10,14 @@
 <body>
   <div id="wishlist" class="container">
     <h1>My PSN Wishlist</h1>
+    <div v-for="game in wishlistData">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="card-title">Name: {{game.itemId}}</div>
+          <div class="card-text">Text:</div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="main.js"></script>

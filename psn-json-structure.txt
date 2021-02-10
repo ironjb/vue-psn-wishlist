@@ -1,0 +1,25 @@
+included[0]
+    attributes
+        name: <string>
+        skus[0]
+            prices
+                non-plus-user
+                    actual-price (is discount or default)
+                        display: <string>
+                        value: <number>
+                    availability
+                        end-date: <dateString>
+                        start-date: <dateString>
+                    strikethrough-price (is null if no discount)
+                        display: <string>
+                        value: <number>
+                plus-user
+                    <same as non-plus-user above>
+included[1]
+    attributes
+        display_price: <string>
+        price: <number>
+        rewards[0] (empty array if no discount)
+            display_price: <string>
+            price: <number>
+
