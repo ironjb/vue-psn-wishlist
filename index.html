@@ -11,16 +11,47 @@
   <div id="wishlist" class="container">
     <h1>My PSN Wishlist</h1>
     <div v-for="game in wishlistData">
-      <div class="card mb-3">
+      <div class="card mb-3" v-if="game">
+        <div class="card-header">{{game.psnData?.name}}</div>
         <div class="card-body">
-          <div class="card-title">Name: {{game.itemId}}</div>
-          <div class="card-text">Text:</div>
+          <div class="row">
+            <div class="col">nPlus_actualPrice</div>
+            <div class="col">{{game.nPlus_actualPrice}}</div>
+          </div>
+          <div class="row">
+            <div class="col">nPlus_strikePrice</div>
+            <div class="col">{{game.nPlus_strikePrice}}</div>
+          </div>
+          <div class="row">
+            <div class="col">nPlus_availStart</div>
+            <div class="col">{{game.nPlus_availStart}}</div>
+          </div>
+          <div class="row">
+            <div class="col">nPlus_availEnd</div>
+            <div class="col">{{game.nPlus_availEnd}}</div>
+          </div>
+          <div class="row">
+            <div class="col">yPlus_actualPrice</div>
+            <div class="col">{{game.yPlus_actualPrice}}</div>
+          </div>
+          <div class="row">
+            <div class="col">yPlus_strikePrice</div>
+            <div class="col">{{game.yPlus_strikePrice}}</div>
+          </div>
+          <div class="row">
+            <div class="col">yPlus_availStart</div>
+            <div class="col">{{game.yPlus_availStart}}</div>
+          </div>
+          <div class="row">
+            <div class="col">yPlus_availEnd</div>
+            <div class="col">{{game.yPlus_availEnd}}</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script src="https://unpkg.com/vue@next"></script>
-  <script src="main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

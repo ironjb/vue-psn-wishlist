@@ -1,4 +1,4 @@
-const Wishlist = {
+const Wishlist_Old = {
   data() {
     return {
       counter: 0,
@@ -20,7 +20,7 @@ const Wishlist = {
           fetch('https://store.playstation.com/valkyrie-api/en/US/19/resolve/' + item.itemId)
           .then(response2 => response2.json())
           .then(data2 => {
-            console.log('data2', data2);
+            // console.log('data2', data2);
             const dAttr = data2?.included[0]?.attributes;
             const nPlus = dAttr?.skus[0]?.prices['non-plus-user'];
             const yPlus = dAttr?.skus[0]?.prices['plus-user'];
@@ -44,13 +44,11 @@ const Wishlist = {
       });
       // console.log('final wishlistData', this.wishlistData);
     });
-    // TODO: finish getting data
-    // see here: https://stackoverflow.com/questions/53152072/import-data-from-a-json-file-in-vue-js-instead-of-manual-data
   }
 };
 
-const myWishlistApp = Vue.createApp(Wishlist);
+const myWishlistApp_Old = Vue.createApp(Wishlist_Old);
 
 // create vue components before mount
 
-myWishlistApp.mount('#wishlist');
+myWishlistApp_Old.mount('#wishlist');
